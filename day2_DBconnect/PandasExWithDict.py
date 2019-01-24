@@ -10,6 +10,7 @@ try:
         df = sp.DataFrame(data, columns=['ID', 'Name', 'Percent'])
         print('Converting into DataFrame')
         print(df)
+        print(df.to_string)
     except Exception as e:
         print('Something went wrong while converting to frames', e)
 
@@ -25,4 +26,6 @@ data = {
 print(data)
 df=sp.DataFrame(data)
 print(data)
+
+
 """
